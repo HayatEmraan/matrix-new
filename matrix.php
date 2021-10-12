@@ -22,10 +22,6 @@
             array ($first, $second,$fifth, $sixth),
             array ($third, $fourth,$seven, $eight)
         );
-        array_push($hello, "Array");
-        echo "<pre>";
-        print_r($hello);
-        echo "<pre>";
         if(is_numeric($first) && is_numeric($second) && is_numeric($third) && is_numeric($fourth) && is_numeric($fifth) && is_numeric($sixth) && is_numeric($seven) && is_numeric($eight)) {
             if($mathtime == "ADD") {        
                 $first_results = $first + $fifth;
@@ -51,12 +47,13 @@
 ?>
 <body>
     <?php
-     print_r($hello);
+        echo "<pre>";
+        print_r($hello);
+        echo "<pre>";
     ?>
     <h2>This is Matrix Calculator Demo Using PHP and HTML</h2>
     <form method = "POST">
         <h3>Input Your 1st Number Below!</h3>
-        <div class = "form">
         <lavel>1st Number</lavel>
         <input type = "Number" name = "first" value = "first">
         <lavel>2nd Number</lavel>
@@ -89,10 +86,8 @@
         <lavel>Fourth Results</lavel>
         <input name = "Results" name = "fourth_results" value = "<?php echo $fourth_results;?>">
         </div>
-        <br>
-        <br>
-        <div id = "submit">     
-        <input type = "submit" name = "math" value = "ADD">        
+        <br>    
+        <input type = "submit" name = "math" value = "ADD">   
         <input type = "submit" name = "math" value = "SUB">       
         <input type = "submit" name = "math" value = "MULTI">
         </div>
